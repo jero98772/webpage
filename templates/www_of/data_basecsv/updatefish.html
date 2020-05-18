@@ -1,0 +1,287 @@
+{% extends  "www_of/base.html"%}
+{% block content %}
+{% set webpage = "/www_of"%}
+
+<form action="{{webpage}}/data_basecsv/actualisar{{fish.0}}" method="POST" enctype="multipart/form-data">	
+
+
+
+
+
+	<table style=" width:100%;" border="1">
+
+	<tr>
+		<td>scientific name</td>
+		<td><input type="text" name="scientific_name" placeholder="scientific name"  value="{{ fish.1 }}"></td>
+		<td>common name</td>
+		<td><input type="text" name="common_name" placeholder="common name"  value="{{fish.2}}"></td>
+
+	</tr>
+	<tr>
+		<td>minimun of ph</td> 
+		<td><input type="text" name="minph" placeholder="minimun of ph "value="{{fish.3}}"></td>
+		<td>maximum of ph</td>
+		<td><input type="text" name="maxph" placeholder="maximum of ph" value="{{fish.4}}"></td>
+	</tr>
+	<tr>
+
+		<td>minimun of gh  </td>
+		<td><input type="text" name="mingh" placeholder="minimun of gh" value="{{fish.5}}"></td>
+		<td>maximum of gh</td>
+		<td><input type="text" name="maxgh" placeholder="maximum of gh" value="{{fish.6}}"></td>
+
+	</tr>
+	<tr>
+		<td>minimun of temperature °C</td>
+		<td><input type="text" name="mintemperature" placeholder="minimun of temperature °C" value="{{fish.7}}"></td>
+		<td>maximum of temperature °C</td>
+		<td><input type="text" name="maxtemperature" placeholder="maximum of temperature °C" value="{{fish.8}}"></td>
+
+	</tr>
+	<tr>
+		<td>weight of in kilos kg</td>
+		<td><input type="text" name="weight" placeholder="weight in kilos" value="{{fish.9}}"></td>
+		<td>large of fish cm</td>
+		<td><input type="text" name="large_of_fish_in_centimeters" placeholder="large of fish in centimeters" value="{{fish.10}}"></td>
+	</tr>
+	<tr>
+		<td>needed liters</td>
+		<td><input type="text" name="needed_liters" placeholder="needed liters" value="{{fish.11}}"></td>
+		<td>can coexist with plants</td>
+		<td><select name="withpalnts" value="{{fish.12}}">
+				<option>no </option>
+				<option>yes </option>
+	</tr>
+	<tr>
+		<td>that eats omnivore, carnivore or herbivore</td>
+		<td><select name="eats" value="{{fish.13}}">
+
+		<option>    omnivore  eat all </option>
+		<option>    carnivore  only eat meet </option>
+		<option>    herbivore  only eat plant</option>
+
+		</select></td>
+		<td>can eat or  recommended food</td>
+		<td><input type="text" name="can_eat" placeholder="can eat" value="{{fish.14}}"></td>
+	</tr>
+	<tr> 
+		
+		<td>type of reproduction</td>
+		<td><select name="reproduction" value="{{fish.15}}">
+				<option>oviparous   </option>
+				<option>oral incubator  </option>
+				<option>viviparous </option>
+		</select></td>
+		<td>if that fish can kill it why? or not </td>
+		<td><input type="text" name="kill" placeholder="if that fish can kill it why?" value="{{fish.16}}"></td>
+	</tr>
+	<tr> 
+		
+		<td>type of breathing</td>
+		<td><select name="breathing" value="{{fish.17}}">
+				<option>fresh water</option>
+				<option>fresh water and Anabantoidei</option>
+				<option>breathing in the sea</option>
+
+		</select></td>
+		<td>place of the mouth</td>
+		<td>
+			<select name="mouth" value="{{fish.18}}">
+				<option>has the upper mouth  </option>
+				<option>his mouth is in the middle   </option>
+				<option>has the lower mouth </option>
+
+		</select></td>
+	</tr>
+	<tr> 
+		<td>latitude</td>
+		<td><input type="text" name="latitude" placeholder="laitud fish  habitat" value="{{fish.19}}"></td>
+		<td>longitude </td>
+		<td><input type="text" name="longitude" placeholder="longitude fish  habitat  "  value="{{fish.20}}"></td>
+	</tr>
+
+	<tr> 
+		
+		<td>country</td>
+		<td><input type="text" name="country" placeholder="country name(s) in where does the fish live " value="{{fish.21}}"></td>
+		<td>state</td>
+		<td><input type="text" name="state" placeholder="state name(s) in where does the fish live "  value="{{fish.22}}"></td>
+	</tr>
+
+	<tr> 
+		
+		<td>city</td>
+		<td><input type="text" name="city" placeholder="city name(s) in where does the fish live " value="{{fish.23}}"></td>
+		<td>river ,lake or sea</td>
+		<td><input type="text" name="waterenv" placeholder="river ,lake or sea name(s) in where does the fish live " value="{{fish.24}}"></td>
+	</tr>
+	<tr> 
+		
+		<td>fish temperament</td>
+		<td>
+		<select name="temperament" value="{{fish.25}}">
+				<option>the fish is passive   </option>
+
+				<option>the fish is agresive  </option>
+		</select>
+		</td>
+		<td>fish behavior (personality)</td>
+		<td><input type="text" name="behavior" placeholder="fish behavior personality" value="{{fish.26}}"></td>
+	</tr>
+	<tr>
+		<td> swimming zone</td>
+		<td>
+			<select name="swimming_zone" value="{{fish.27}}">
+				<option>the fish swims in up zone  </option>
+				<option>the fish swims in middle zone  </option>
+				<option>the fish swims in down zone  </option>
+			</select>
+		</td>
+		<td>move slow ,faster or middle that human swiming</td>
+		<td><select name="vel" value="{{fish.28}}">
+				<option>the fish swims faster   </option>
+				<option>the fish swims middle  faster </option>
+				<option>the fish swims middle   </option>
+				<option>the fish swims middle  slow </option>
+				<option>the fish swims slow  </option>
+		</select></td>
+	<tr> 
+
+	<tr> 
+		
+		<td>recommended light</td>
+		<td>
+		<select name="light" value="{{fish.29}}">
+				<option>a lot of light   </option>
+				<option>directly light of sun  </option>
+				<option>small shadow   </option>
+				<option>shadow</option>
+				<option>live in  deep ocean </option>
+		</select></td>
+		<td>gravel</td>
+		<td><input type="text" name="gravel" placeholder="best gravel or substratum for this fish " value="{{fish.30}}"></td>
+	</tr>
+	<tr> 
+		
+		<td>habitats</td>
+		<td><input type="text" name="habitats" placeholder="this fish habitats in the wild" value="{{fish.31}}"></td>
+		<td>habits </td>
+		<td><input type="text" name="habits" placeholder="this fish habits in the wild" value="{{fish.32}}"></td>
+	</tr>
+	<tr> 
+		
+		<td>structural shape</td>
+		<td><input type="text" name="structuralshape" placeholder="shape of ornaments of habitat" value="{{fish.33}}"></td>
+		<td>ornaments</td>
+		<td><input type="text" name="ornaments" placeholder="shape ornaments of habitat" value="{{fish.34}}"></td>
+
+	</tr>
+	<tr> 
+		
+
+		<td>ecosistem</td>
+		<td><input type="text" name="ecosistem" placeholder="ecosystem where the fish lives (taking into account the climate and other animals and plants)" value="{{fish.36}}"></td>
+		<td>forms surroundings fish rocks, buildings etc. </td>
+		<td><input type="text" name="forms_surroundings " placeholder="geometric shape and the points of the surroundings (rocks, buildings, etc.)" value="{{fish.38}}"></td>
+	</tr>
+	<tr> 
+		
+
+		</select></td>
+		<td>description</td>
+		<td><input type="text" name="description" placeholder="description" value="{{fish.40}}"></</td>
+		<td>fish photo</td>
+		<td><input type="file" name="photo"  id="inputimge"  ></td>
+	</tr>
+
+	<tr> 
+		
+		<td colspan="2">summit changes</td>
+		<td colspan="2">
+		<button type="summit ">summit </button>
+		</td>	
+
+	</tr>
+		
+
+	<!--tr> 
+		
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr-->
+
+
+</table>
+
+<button type="summit ">save </button>
+<table  border="1">
+
+
+			<tr bgcolor="aqua">
+				
+				<td>id {{ fish.0 }}</td>
+				<td colspan="2"><b>scientific NAME</b> {{ fish.1 }}</td>
+				<td><b>common NAME</b> {{fish.2}}</td>
+				<td><b>liters </b>{{fish.11}}cm</td>
+				<td><b>type of water</b> {{ fish.41 }}</td>
+
+				<td colspan="2" rowspan="4">
+					{%set imgpath = "./../static/www_of/img/saved_db_img/"+strcounter  %}			
+					<img src="./.{{ imgpath }}  " alt="{{ imgpath }} " height="250" width="250" >
+					
+				</td>
+
+
+			</tr>
+			<tr>
+				<td><b>temperature </b>{{ fish.7}} -- {{ fish.8}}  </td>
+				<td><b>pH </b>{{ fish.3}} -- {{ fish.4}}  </td>
+				<td><b>gH </b>{{ fish.5}} -- {{ fish.6}}  </td>
+				<td>is a fish {{ fish.13}}, likes to eat {{ fish.14}}</td>
+				<td><b>weight </b>{{fish.9}}kg</td>
+				<td><b>large </b>{{fish.10}}cm</td>
+			</tr>
+
+			<tr>
+				<td><b>latitude</b>{{ fish.19}}</td>
+				<td><b>longitude</b>{{ fish.20}}</td>
+				<td><b>country</b>{{ fish.21}}</td>
+				<td><b>state</b>{{ fish.22}}</td>
+				<td><b>city</b>{{ fish.23}}</td>
+				<td><b>river ,lake or sea</b>{{ fish.24}}</td>
+			</tr>
+			<tr>
+				<td>it reproduces in an {{ fish.15}} way</td>
+				<td><b> type breathing</b> is {{ fish.17}}</td>
+				<td> {{ fish.18}}</td>
+				<td><b>temperament</b> {{ fish.25}}  </td>
+				<td>if that fish can kill  the reason is   {{ fish.16}}</td>
+				<td>recommended filtering</b>{{ fish.12}} L/H</td>
+
+			</tr>
+			<tr>
+				<td><b>behavior </b>{{fish.26}} </td>
+				<td><b>swimming zone</b> {{fish.27}}</td>
+				<td><b>speed of swimming</b> is {{fish.28}}</td>
+				<td><b>recommended light</b> {{fish.29}}</td>
+				<td><b>recommended graver</b> {{fish.30}}</td>
+				<td><b>forms surroundings </b>{{fish.38}}</td>
+				<td colspan="2" rowspan="2"><b>description:</b>{{fish.40}} </td>
+			</tr>
+			<tr>
+				<td><b>habitats: </b> {{fish.31}} </td>
+				<td><b>habits: </b>{{fish.32}}</td>
+				<td><b>structural: </b>{{fish.33}}</td>
+				<td><b>ornaments: </b>{{fish.34}}</td>
+				<td><b>can coexist with palnts: </b>{{fish.37}}</td>
+				<td><b>ecosistem: </b>{{fish.36}}</td>
+			</tr>
+
+	</tbody>
+</table>
+
+</form>
+
+{% endblock %}

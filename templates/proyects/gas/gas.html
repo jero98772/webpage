@@ -1,0 +1,40 @@
+{% extends  'proyects/base.html'%}
+{% block content %}
+
+<form method="post" action="/proyects/gas.html"  enctype="multipart/form-data">
+	<table style=" width:100%;" border="1">
+		<tr>
+			
+			<td>precio</td>
+			<td>cosa</td>
+			<td>foto [NO ESTA HABILITADO DEBIDO AL POCO ESPACIO]</td>
+		</tr>
+		<tr>
+			<td><input type="text" name="price" placeholder="precio de la cosa" ></td>
+			<td><input type="text" name="thing" placeholder="cosa en la que se gasto" ></td>
+			<td><input type="file" name="img_factura" placeholder="foto factura" ></td>
+
+		</tr>
+	</table>
+<button type="summit ">summit </button>
+<h1>data</h1>
+	<table style=" width:100%;" border="1">
+		<tr>
+			<td>id</td>
+			<td>precio</td>
+			<td>cosa</td>
+			<td>foto [NO ESTA HABILITADO DEBIDO AL POCO ESPACIO]</td>
+		</tr>
+		{% for purchase in purchases  %} 
+			
+		<tr>
+			<td>{{loop.index}}</td>
+			<td>{{purchase.0}}</td>
+			<td>{{purchase.1}}</td>
+			<td>[NO ESTA HABILITADO DEBIDO AL POCO ESPACIO]</td>
+		</tr>
+		{% endfor %}
+	</table>
+
+</form>
+{% endblock %}

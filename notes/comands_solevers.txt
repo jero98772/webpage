@@ -1,0 +1,66 @@
+systemctl start postgresql.service  for "solove service" and start posgres 
+ SELECT * FROM type_of_fish_type_of_fish ; for see in db (data base)
+run curapeces with uncoment this lines
+
+#curapeces=curapeces()
+#curapeces.image()
+#curapeces.save_nn()
+esta en 2 idimoas revueltos por que lugeo va ahaber un baranch español y otro ingles
+in the modesl of AI you need 3 for not show a error 
+
+ CREATE TABLE wwwof(id serial 
+ ,scientific_name text
+ ,common_name text 
+
+ ,minph float 
+ ,maxph float 
+ ,mingh float 
+ ,maxgh float 
+ , mintemperature float
+ , maxtemperature float 
+ 
+  ,weight float 
+  ,large_of_fish_in_centimeters float
+  ,needed_liters float 
+  ,recommended_filtering float 
+
+  ,eats text 
+  , can_eat text 
+  ,reproduction text
+  ,kill text
+  ,breathing text
+  , mouth text
+
+  ,latitude text 
+  ,longitude text 
+  , country text 
+  , state text  
+  ,city    text  
+  ,waterenv text 
+  ,temperament text
+  ,behavior text
+  ,swimming_zone text 
+  ,vel text
+  , light text 
+  ,gravel text
+
+  ,habitats text
+  , habits text  
+  ,structural text 
+  , ornaments text
+  ,waterforce float
+  , ecosistem text
+  ,withpalnts text
+  ,forms_surroundings text
+
+  ,photo bytea
+  ,description text
+  
+  , water text );
+
+
+CREATE TABLE wwwoftable4(id serial ,scientific_name text,common_name text ,minph float ,maxph float ,mingh float ,maxgh float , mintemperature float, maxtemperature float ,weight float ,large_of_fish_in_centimeters float,needed_liters float ,recommended_filtering float ,eats text , can_eat text ,reproduction text,kill text,breathing text, mouth text,latitude text ,longitude text , country text , state text  ,city    text  ,waterenv text ,temperament text,behavior text,swimming_zone text ,vel text, light text ,gravel text,habitats text, habits text  ,structural text , ornaments text,waterforce float, ecosistem text,withpalnts text,forms_surroundings text,photo bytea,description text, water text ,photoname text);
+  
+
+
+

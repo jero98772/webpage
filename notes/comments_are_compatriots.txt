@@ -1,0 +1,165 @@
+"""
+scientific_name = db.Column(db.String(100))
+ph = db.Column(db.Integer, primary_key = True)
+temperature = db.Column(db.Integer, primary_key = True)
+needed_liters= db.Column(db.Integer, unique=True)
+large_of_fish_in_centimeters= db.Column(db.Integer, unique=True)
+fish_diet = db.Column(db.String(20), unique=True)
+fish_conduct = db.Column(db.String(20))
+common_name = db.Column(db.String(50))"""
+$
+$
+$
+$
+$
+		#photo = str(request.form.get("photo"))
+		
+		#photo = request.files["photo"]
+$
+$
+		#photo = str(open(photo,'rb').read())
+		#dataphoto.save("/static/img/"+str(dataphoto))
+		#photo =("<FileStorage: '","' ('image/jpeg')> ")
+$
+$
+$
+		"""
+		savephoto = cv2.imread(photoname, cv2.IMREAD_COLOR)
+		cv2.imwrite(imgdir+str(photoname),savephoto)
+		dirforimg=subprocess.run("find"+str(photoname),shell=True ,returncode = True)
+		photo = open(dirforimg, 'rb')
+		"""
+		#photo = str(imgconvert(photo))
+		#photo = psycopg2.Binary( photo1.read() )
+		#photo = buffer( photo1.read() )
+		#photo = photo1.read()
+
+		#photo = open(photo) 
+		"""photo1 = open(photo, 'rb')
+		print("\n"*2,photo1 ,"\n"*2)
+
+		tipestring = StringIO.StringIO()
+		photo.save(tipestring,"JPEG")
+		print("\n"*2,photo1 ,"\n"*2)
+
+		photo2 = tipestring.getvalue() 
+		print("\n"*2,photo2 ,"\n"*2)
+
+		photo3 = psycopg2.Binary(photo)
+		print("\n"*2,photo3 ,"\n"*2)
+"""
+$
+$
+$
+$
+$
+
+		#db.execute('INSERT INTO wwwoftable1  VALUES ({},{},{},{}, {},{},{},{})'.format(str(scientific_name),ph,temperature,needed_liters,large_of_fish_in_centimeters,str(fish_diet),str(fish_conduct),str(location),str(common_name)) ,(scientific_name,ph,temperature,needed_liters,large_of_fish_in_centimeters,fish_diet,location,common_name,fish_conduct))
+		#db.execute("INSERT INTO wwwoftable1( scientific_name,ph,temperature,large_of_fish_in_centimeters,needed_liters,fish_diet,fish_conduct,location,common_name) VALUES (%s, %s, %s, %s, %s, %s, %s, %s,%s) ;" ,(str(scientific_name),ph,temperature,needed_liters,large_of_fish_in_centimeters,str(fish_diet),str(fish_conduct),str(location),str(common_name)))
+#		db.execute(
+		""" INSERT INTO wwwoftable1(
+ 		scientific_name 
+ 		,common_name 
+		,minph  
+		,maxph  
+		,mingh  
+		,maxgh  
+		,mintemperature 
+		,maxtemperature  
+		,weight  
+		,large_of_fish_in_centimeters 
+		,needed_liters  
+		,recommended_filtering  
+		,eats   
+		,can_eat  
+		,reproduction 
+		,kill 
+		,breathing 
+		,mouth 
+		,latitude  
+		,longitude  
+		, country  
+		, state   
+		,city      
+		,waterenv  
+		,temperament 
+		,behavior 
+		,swimming_zone  
+		,vel 
+		, light  
+		,gravel 
+		,habitats 
+		, habits   
+		,structural  
+		, ornaments 
+		,waterforce 
+		, ecosistem 
+		,withpalnts 
+		,forms_surroundings 
+		,photo 
+		,description 
+		, water  ) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s );
+"""		#"""#,(scientific_name ,common_name ,minph  ,maxph  ,mingh  ,maxgh  ,mintemperature ,maxtemperature  ,weight  ,large_of_fish_in_centimeters ,needed_liters  ,recommended_filtering  ,eats   ,can_eat  ,reproduction ,kill ,breathing ,mouth ,latitude  ,longitude  , country  , state   ,city      ,waterenv  ,temperament ,behavior ,swimming_zone  ,vel , light  ,gravel ,habitats , habits   ,structural  , ornaments ,waterforce , ecosistem ,withpalnts ,forms_surroundings ,photo ,description , water ))
+		#db.execute(' INSERT INTO wwwoftable1 (scientific_name ,common_name ,minph  ,maxph  ,mingh  ,maxgh  ,mintemperature ,maxtemperature  ,weight  ,large_of_fish_in_centimeters ,needed_liters  ,recommended_filtering  ,eats   ,can_eat  ,reproduction ,kill ,breathing , mouth ,latitude  ,longitude  , country  , state   ,city      ,waterenv  ,temperament ,behavior ,swimming_zone  ,vel , light  ,gravel ,habitats, habits   ,structural  , ornaments ,waterforce , ecosistem ,withpalnts ,forms_surroundings ,photo ,description , water  ) VALUES '+f'({scientific_name}, {common_name} ,{minph}  ,{maxph}  ,{mingh}  ,{ maxgh}  ,{mintemperature} ,{maxtemperature } , {weight}  ,{large_of_fish_in_centimeters} ,{needed_liters}  ,{recommended_filtering}  ,{eats}   ,{can_eat}  ,{reproduction} ,{kill} ,{breathing} ,{mouth} ,{latitude  },{longitude}  ,{ country}  , {state}   ,{city}      ,{waterenv}  ,{temperament} ,{behavior} ,{swimming_zone}  ,{vel} ,{ light}  ,{gravel} ,{habitats} , {habits}   ,{structural } , {ornaments} ,{waterforce} ,{ ecosistem} ,{withpalnts} ,{forms_surroundings} ,{photo} ,{description} , {water} )')
+		#db.execute(" INSERT INTO wwwoftable1(scientific_name ,common_name ,minph  ,maxph  ,mingh  ,maxgh  ,mintemperature ,maxtemperature  ,weight  ,large_of_fish_in_centimeters ,needed_liters  ,recommended_filtering  ,eats   ,can_eat  ,reproduction ,kill ,breathing ,mouth ,latitude  ,longitude  , country  , state   ,city      ,waterenv  ,temperament ,behavior ,swimming_zone  ,vel , light  ,gravel ,habitats, habits   ,structural  , ornaments ,waterforce , ecosistem ,withpalnts ,forms_surroundings ,photo ,description , water  ) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s );",(scientific_name ,common_name ,minph  ,maxph  ,mingh  ,maxgh  ,mintemperature ,maxtemperature  ,weight  ,large_of_fish_in_centimeters ,needed_liters  ,recommended_filtering  ,eats   ,can_eat  ,reproduction ,kill ,breathing ,mouth ,latitude  ,longitude  , country  , state   ,city      ,waterenv  ,temperament ,behavior ,swimming_zone  ,vel , light  ,gravel ,habitats , habits   ,structural  , ornaments ,waterforce , ecosistem ,withpalnts ,forms_surroundings ,photo ,description , water ))
+		#for datafish in fishdata:
+		#	fishstrings = str(datafish)
+		#unpackfish = *fishdata
+		#db.execute(" INSERT INTO wwwoftable1(%s) VALUES (%s);",(str(eval(*fishdata)) ,*fishdata))
+		#db.execute(f" INSERT INTO wwwoftable1 {datafish} VALUES {fishdata };")
+
+$
+$
+$
+$
+$
+		#db.execute(' INSERT INTO wwwoftable1 (scientific_name ,common_name ,minph  ,maxph  ,mingh  ,maxgh  ,mintemperature ,maxtemperature  ,weight  ,large_of_fish_in_centimeters ,needed_liters  ,recommended_filtering  ,eats   ,can_eat  ,reproduction ,kill ,breathing , mouth ,latitude  ,longitude  , country  , state   ,city      ,waterenv  ,temperament ,behavior ,swimming_zone  ,vel , light  ,gravel ,habitats, habits   ,structural  , ornaments ,waterforce , ecosistem ,withpalnts ,forms_surroundings ,photo ,description , water  ) VALUES ({},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{})'.format(scientific_name ,common_name ,minph  ,maxph  ,mingh  ,maxgh  ,mintemperature ,maxtemperature  ,weight  ,large_of_fish_in_centimeters ,needed_liters  ,recommended_filtering  ,eats   ,can_eat  ,reproduction ,kill ,breathing ,mouth ,latitude  ,longitude  , country  , state   ,city      ,waterenv  ,temperament ,behavior ,swimming_zone  ,vel , light  ,gravel ,habitats , habits   ,structural  , ornaments ,waterforce , ecosistem ,withpalnts ,forms_surroundings ,photo ,description , water ))
+		#db.execute("INSERT INTO wwwoftable1 (id ,scientific_name ,common_name ,minph  ,maxph  ,mingh  ,maxgh  ,mintemperature ,maxtemperature  ,weight  ,large_of_fish_in_centimeters ,needed_liters  ,recommended_filtering  ,eats   ,can_eat  ,reproduction ,kill ,breathing , mouth ,latitude  ,longitude  , country  , state   ,city      ,waterenv  ,temperament ,behavior ,swimming_zone  ,vel , light  ,gravel ,habitats, habits   ,structural  , ornaments ,waterforce , ecosistem ,withpalnts ,forms_surroundings ,photo ,description , water  ) VALUES ({},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{})".format(scientific_name ,common_name ,minph  ,maxph  ,mingh  ,maxgh  ,mintemperature ,maxtemperature  ,weight  ,large_of_fish_in_centimeters ,needed_liters  ,recommended_filtering  ,eats   ,can_eat  ,reproduction ,kill ,breathing ,mouth ,latitude  ,longitude  , country  , state   ,city      ,waterenv  ,temperament ,behavior ,swimming_zone  ,vel , light  ,gravel ,habitats , habits   ,structural  , ornaments ,waterforce , ecosistem ,withpalnts ,forms_surroundings ,photo ,description , water ))
+		
+$
+$
+$
+$
+$
+		#db.execute(
+		"""UPDATE wwwoftable1 SET 
+		scientific_name = {} ,
+		ph = {} ,
+		temperature = {},
+		large_of_fish_in_centimeters = {} ,
+		needed_liters = {} ,
+		fish_diet = {} ,
+		fish_conduct = {} ,
+		location = {} ,
+		common_name = {} 
+		WHERE id = {} ;
+		"""
+		#.format(str(scientific_name),ph,temperature,large_of_fish_in_centimeters,needed_liters,str(fish_diet),str(fish_conduct),str(location),str(common_name),id))
+		#db.execute("UPDATE wwwoftable1 SET ( scientific_name,ph,temperature,large_of_fish_in_centimeters,needed_liters,fish_diet,fish_conduct,location,common_name ) WHERE id VALUES (%s, %s, %s, %s, %s, %s, %s, %s,%s,%s) ;" ,(str(scientific_name),ph,temperature,needed_liters,large_of_fish_in_centimeters,str(fish_diet),str(fish_conduct),str(location),str(common_name),id))
+
+				#db.execute("UPDATE wwwoftable1 SET ( scientific_name = { str(scientific_name)},ph = {float(ph)}, temperature = {float(temperature)}, large_of_fish_in_centimeters = {float(large_of_fish_in_centimeters)},needed_liters = {float(needed_liters)}, fish_diet = {str(fish_diet)} , fish_conduct = {str(fish_conduct)},location = {str(location)}, common_name = {str(common_name)} ) WHERE id = {id} ;")
+	
+	#predict=curapeces.predict()
+	#curapeces_class.image()
+	#curapeces_class.nn()
+	#curapeces_class.save_nn()
+	#predict=predict()
+	#predict.display_image()
+	#print(predict.predict())
+	#print(predict.model)
+
+		"""
+		if not prediccion=="":
+			prediccion=""
+		if not predict.pez=="":
+			prediccion"""
+
+			
+					#import curapeces
+		#curapeces_class=curapeces.curapeces()
+
+
+
+		#print("#"*50+str(fishdata)+"#"*50)
+		#print("#"*50+str(len(fishdata))+"#"*50)
+

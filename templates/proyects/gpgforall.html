@@ -1,0 +1,50 @@
+{% extends "proyects/base.html"%}
+{% block content %}
+
+<style type="text/css">
+.centerdiv{
+
+	display: grid;
+	grid-template-columns: 50% 50%   ;
+}
+	.blue{
+	background-color: rgba(0,0,255,0.5);
+	width: 90%;
+	height: auto;
+	margin: auto;
+	border:  5px solid rgba(0,0,255,0.7);
+	font-size: 50px;
+	line-height: auto;
+
+}
+	.red{
+	background-color: rgba(255,0,0,0.5);
+	width: 90%;
+	height: auto;
+	margin: auto;
+	border:  5px solid rgba(255,0,0,0.7);
+	font-size: 50px;
+	line-height: auto;
+
+
+}
+
+</style>
+<center><p style="font-size: 50px">gpgforall</p></center>
+<center><h1>keys and paswords not be recovery and no be stroge </h1></center>
+<center>
+	<div class="centerdiv">
+		<a href="/proyects/gpgforallfreemode.html" style="color: orange">
+			<div class="red">
+				freemode
+			</div>
+		</a>
+		<a href="" style="color: orange">
+		
+			<div class="blue">
+				guidemode
+			</div>
+		</a>
+
+	</div>
+</center>{% endblock %}

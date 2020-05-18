@@ -1,0 +1,38 @@
+nombre_cientifico,"PH
+",H,temperatura C°,"logitud_del_pez_en_cm
+","litros
+","comida
+",reproduccion,"iluminacion
+","temperamneto
+","ambiente
+","nada por  
+"
+ichthyomyzon bdellium,8,6,23,38,400,peces vivos,oviparo,oscura,agresivo,solo sustrato,el fondo
+scaphrhynchus plantorychus,8,6,23,250,5000,lombrices,oviparo,oscura,pasivo,solo sustrato,el fondo
+aphredorerus sayanus ,7,3,24,13,150,lombrices,oviparo,oscura,pasivo,plantado,el fondo
+acipenser transmontanus,8,10,20,600,5000,lombrices,oviparo,oscura,pasivo,cuevas,el fondo
+oncorhynchus mykiss,7,5,20,200,5000,lombrices,oviparo,oscura,agresivo,solo sustrato,medio
+lepisosteus spatula,8,10,23,300,5000,peces vivos,oviparo,luz media,agresivo,solo sustrato,al fondo
+lepisosteus oculatus,8,10,23,150,5000,peces vivos,oviparo,luz media,agresivo,solo sustrato,el fondo
+lepisosteus osseu,8,10,23,200,5000,peces vivos,oviparo,luz media,agresivo,solo sustrato,el fondo
+lepisosteus platostomus,8,10,23,150,5000,peces vivos,oviparo,luz media,agresivo,solo sustrato,medio
+oncorhynchus mykiss,8,10,15,80,1000,peces vivos,oviparo,luz media,agresivo,rocoso,el fondo
+salmo trutta,8,10,15,50,1000,peces vivos,oviparo,luz media,agresivo,rocoso,el fondo
+umbra limi,7,5,15,9,50,lombrices,oviparo,oscura,pasivo,plantas y rocas,el fondo
+culaea incosntans,8,5,18,5,50,lombrices,oviparo,luz media,agresivo,plantado,medio
+gasterosteus aculeatus,8,10,20,5,50,lombrices,oviparo,luz media,agresivo,plantado,medio
+ama calvia,7,5,20,75,750,peces vivos,oviparo,oscura,agresivo,plantado,el fondo
+oncorhynchus kisutch,8,10,12,75,750,peces vivos,oviparo,luz media,agresivo,rocoso,sin preferido
+megalops atlanticus,9,20,20,280,5000,peces vivos,oviparo,luz media,agresivo,solo sustrato,medio
+salvelinus fontinalis,7,5,8,55,1000,peces vivos,oviparo,oscura,agresivo,rocoso,el fondo
+salvelinus namaycush,8,5,5,150,3000,peces vivos,oviparo,luz media,agresivo,solo sustrato,sin preferido
+cuyprinella whipplei,7.2,12,18,8,80,envasada,oviparo,luz alta,pasivo,plantas y rocas,el fondo
+notropis hudsonius,7.2,10,18,10,100,envasada,oviparo,luz alta,pasivo,plantas y rocas,el fondo
+pimephales promelas,7.4,15,18,7.5,80,lombrices,oviparo,luz alta,pasivo,plantas y rocas,el fondo
+esox americanus,7,5,15,38,400,peces vivos,oviparo,luz media,agresivo,plantas y rocas,superficie
+umbra pigmae,6,3,18,15,100,lombrices,oviparo,luz media,pasivo,plantas y rocas,el fondo
+esox lucius,7,5,12,75,1000,peces vivos,oviparo,luz media,agresivo,plantas y rocas,superficie
+gila robusta,8,15,15,40,1000,peces vivos,oviparo,oscura,agresivo,rocoso,el fondo
+esox niger,7,5,12,80,1000,peces vivos,oviparo,luz media,agresivo,plantas,superficie
+notemigonus crysolucas,7,5,20,25,500,envasada,oviparo,luz media,agresivo,solo sustrato,sin preferido
+exoglossum maxillingua,7,5,15,14,150,envasada,oviparo,oscura,pasivo,,

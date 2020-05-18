@@ -1,0 +1,14 @@
+{% extends  'proyects/base.html'%}
+{% block content %}
+{% if session['loged'] %}
+
+You're logged in already!
+
+{% else %}
+<form action="gas_login.html" method="POST">
+<input type="username" name="username" placeholder="Username">
+<input type="password" name="password" placeholder="Password">
+<input type="submit" value="Log in">
+</form>
+{% endif %}
+{% endblock %}

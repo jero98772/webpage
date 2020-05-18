@@ -1,0 +1,37 @@
+
+{% extends "www_of/base.html" %}
+{% block content %}
+<a href="/bechmarck.html">
+	<img id="rotar" src=" {{ url_for('static', filename='img/flecha.png')}}">
+	<style type="text/css">
+	#rotar {
+		transform: rotate(180deg)
+	}
+	</style>
+ <br>
+	 <font size="8">back</font></p>
+	</a>
+<h1>multi core</h1>
+<p>	
+<h2>
+	
+strat in :{{ start }}
+</h2>
+
+<h2>
+finish in :{{ finish }}
+	
+</h2>
+
+<h2>
+your time is :{{finish-start}}
+	
+</h2>
+</p>
+<p>
+	your exerice are {{ reply }}
+</p>
+<p>
+</p>
+
+{% endblock %}
